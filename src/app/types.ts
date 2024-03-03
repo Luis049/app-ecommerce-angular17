@@ -1,6 +1,6 @@
 import { HttpHeaders, HttpContext, HttpParams } from '@angular/common/http';
 
-export interface options {
+export interface Options {
   headers?:
     | HttpHeaders
     | {
@@ -36,6 +36,7 @@ export interface Products {
 }
 
 export interface Product {
+  id?: number;
   price: string;
   name: string;
   image: string;
